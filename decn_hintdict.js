@@ -7,9 +7,9 @@ class decn_Eudict {
 
     async displayName() {
         let locale = await api.locale();
-        if (locale.indexOf('CN') != -1) return '欧路德语助手';
-        if (locale.indexOf('TW') != -1) return '欧路德语助手';
-        return 'Eudict DE->CN Dictionary';
+        if (locale.indexOf('CN') != -1) return '德语助手';
+        if (locale.indexOf('TW') != -1) return '德语助手';
+        return 'Eudict DE->CN Dict';
     }
 
     setOptions(options) {
