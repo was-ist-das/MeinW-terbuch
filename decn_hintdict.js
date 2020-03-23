@@ -1,4 +1,4 @@
-class decn_Eudict {
+class decn_hintdict {
     constructor(options) {
         this.options = options;
         this.maxexample = 2;
@@ -7,9 +7,9 @@ class decn_Eudict {
 
     async displayName() {
         let locale = await api.locale();
-        if (locale.indexOf('CN') != -1) return '德语助手';
-        if (locale.indexOf('TW') != -1) return '德语助手';
-        return 'Eudict DE->CN Dict';
+        if (locale.indexOf('CN') != -1) return '德汉';
+        if (locale.indexOf('TW') != -1) return '德汉';
+        return 'DE->CN Dict';
     }
 
     setOptions(options) {
